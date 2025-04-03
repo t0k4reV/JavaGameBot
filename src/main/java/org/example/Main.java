@@ -5,8 +5,8 @@
   import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
   public class Main {
-    final String username = "@avasiriusbot";
-    final String token = "6696076401:AAG5j_4FmcjJZE5_4v5rSlSTbeLf8kT9zz8";
+    final String username = "@USERNAME";
+    final String token = "TOKEN";
     public static void main(String[] args) {
         System.out.println("Bot started");
         try {
