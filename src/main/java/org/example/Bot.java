@@ -9,8 +9,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.ArrayList;
 
 public class Bot extends TelegramLongPollingBot {
-    final String username = "@avasiriusbot";
-    final String token = "6696076401:AAG5j_4FmcjJZE5_4v5rSlSTbeLf8kT9zz8";
+    final String username = "___";
+    final String token = "___";
     int balance = 1000;
 
     @Override
@@ -34,9 +34,9 @@ public class Bot extends TelegramLongPollingBot {
             String text = message.getText();
             System.out.println(text);
             if (text.equals("/start")) {
-                newText = "Это игровой бот, в котором ты можешь поиграть если скучно на парах! Выбери режим игры: \n" +
-                        "Орел и решка, введи: /coin и orel или reshka + ставка в монетах (например: /coin orel 500)\n" +
-                        "Также доступны команды: /help /balance /start";
+                newText = "ГќГІГ® ГЁГЈГ°Г®ГўГ®Г© ГЎГ®ГІ, Гў ГЄГ®ГІГ®Г°Г®Г¬ ГІГ» Г¬Г®Г¦ГҐГёГј ГЇГ®ГЁГЈГ°Г ГІГј ГҐГ±Г«ГЁ Г±ГЄГіГ·Г­Г® Г­Г  ГЇГ Г°Г Гµ! Г‚Г»ГЎГҐГ°ГЁ Г°ГҐГ¦ГЁГ¬ ГЁГЈГ°Г»: \n" +
+                        "ГЋГ°ГҐГ« ГЁ Г°ГҐГёГЄГ , ГўГўГҐГ¤ГЁ: /coin ГЁ orel ГЁГ«ГЁ reshka + Г±ГІГ ГўГЄГ  Гў Г¬Г®Г­ГҐГІГ Гµ (Г­Г ГЇГ°ГЁГ¬ГҐГ°: /coin orel 500)\n" +
+                        "Г’Г ГЄГ¦ГҐ Г¤Г®Г±ГІГіГЇГ­Г» ГЄГ®Г¬Г Г­Г¤Г»: /help /balance /start";
 
             } else if (text.split(" ")[0].equals("/coin")) {
                 if (Integer.parseInt(text.split(" ")[2]) <= balance) {
@@ -52,14 +52,14 @@ public class Bot extends TelegramLongPollingBot {
                                 "your balance " + balance;
                          if (balance == 0) {
                              balance += 500;
-                             newText += "\nКажется тебя побрили\n" +
-                                     "Держи пятихат\n" +
-                                     "твой баланс  " + balance;
+                             newText += "\nГЉГ Г¦ГҐГІГ±Гї ГІГҐГЎГї ГЇГ®ГЎГ°ГЁГ«ГЁ\n" +
+                                     "Г„ГҐГ°Г¦ГЁ ГЇГїГІГЁГµГ ГІ\n" +
+                                     "ГІГўГ®Г© ГЎГ Г«Г Г­Г±  " + balance;
                          }
 
                         }
                 } else {
-                    newText = "у вас недостаточно монет";
+                    newText = "Гі ГўГ Г± Г­ГҐГ¤Г®Г±ГІГ ГІГ®Г·Г­Г® Г¬Г®Г­ГҐГІ";
                 }
 
             } else if (text.equals("/balance")) {
@@ -67,7 +67,7 @@ public class Bot extends TelegramLongPollingBot {
 
 
             } else if (text.equals("/help")) {
-                newText = "все вопросы в тг @ras0087";}
+                newText = "ГўГ±ГҐ ГўГ®ГЇГ°Г®Г±Г» Гў ГІГЈ @ras0087";}
 
     }
 
